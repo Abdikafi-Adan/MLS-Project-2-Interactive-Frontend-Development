@@ -1,0 +1,88 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  height: 100vh;
+}
+body {
+  margin: 0;
+  background: radial-gradient(#b0e0e6, #4682b4);
+}
+
+.paga-title {
+  font-family: "Creepster", cursive;
+  color: #000080;
+  font-weight: normal;
+  text-align: center;
+  font-size: 6rem;
+}
+.game-info-contaier{
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: space-between; 
+}
+.game-info {
+  font-family: "Chelsea Market", cursive;
+   color: #191970;
+   font-size: 4rem;
+
+}
+.game-container{
+    display: grid;
+    grid-template-columns:  repeat(4,auto);
+    grid-gap: 10px;
+}
+
+.card{
+    position: relative;
+    background-color: black;
+    height: 175px;
+    width: 125px; 
+}
+
+.card-face {
+position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  border-width: 1px;
+  border-style: solid;
+  overflow: hidden;
+  transition: transform 500ms ease-in-out;
+  backface-visibility: hidden;
+}
+.card-front{
+      background-color: #FFBB89;
+  border-color: #333;
+  transform: rotateY(180deg);
+}
+.fa-jedi{
+     transform: rotate(270deg);
+  top: 0;
+  left: 0;
+}
+.fa-galactic-republic{
+     transform: rotate(180deg);
+  bottom: 0;
+  left: 0;
+}
+
+.fa-old-republic{
+    position: absolute;
+  transition: width 100ms ease-in-out, height 100ms ease-in-out;
+  width: 47px;
+  height: 47px;
+}
+
+.fa-jedi-order{
+    align-self: flex-start;
+    width: 47px;
+    height: 47px;
+    color: white;
+    font-size: 4rem;
+transform: translateX(-15px);
+top: 0;
+}
