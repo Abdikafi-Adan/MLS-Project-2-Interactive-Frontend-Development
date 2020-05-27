@@ -16,28 +16,31 @@ body {
   text-align: center;
   font-size: 6rem;
 }
-.game-info-contaier{
-    grid-column: 1 / -1;
-    display: flex;
-    justify-content: space-between; 
+.game-info-container {
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: space-between;
 }
-.game-info {
-  font-family: "Chelsea Market", cursive;
-   color: #191970;
-   font-size: 4rem;
 
+.game-info {
+  color: #FFBB89;
+  font-size: 4em;
 }
-.game-container{
-    display: grid;
-    grid-template-columns:  repeat(4,auto);
-    grid-gap: 10px;
+
+.game-container {
+  margin: 50px auto;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-gap: 10px;
+  justify-content: center;
+  perspective: 500px;
 }
 
 .card{
     position: relative;
-    background-color: black;
     height: 175px;
     width: 125px; 
+    
 }
 
 .card-face {
@@ -52,37 +55,71 @@ position: absolute;
   border-style: solid;
   overflow: hidden;
   transition: transform 500ms ease-in-out;
-  backface-visibility: hidden;
+  backface-visibility: hidden; 
 }
+
+
+.card.visible .card-back{
+    transform: rotatey(-180deg);
+}
+.card.visible .card-front{
+    transform: rotateY(0)
+}
+.card-back{
+background-color:black;
+border-color:navy; 
+
+}
+
 .card-front{
-      background-color: #FFBB89;
-  border-color: #333;
   transform: rotateY(180deg);
 }
-.fa-jedi{
-     transform: rotate(270deg);
+.fa-galactic-senate{
+    position: relative;
+  font-size: 4rem;
+  align-items: center;
+  
+}
+.cob-web{
+    position: absolute;
+    width: 47px;
+    height: 47px;
+    transition: width 100ms ease-in-out,hight 100ms ease-in-out;
+}
+.card-back:hover .cob-web{
+    width: 53px;
+    height: 54px;
+
+}
+.cob-web-top-left {
+  transform: rotate(270deg);
   top: 0;
   left: 0;
 }
-.fa-galactic-republic{
-     transform: rotate(180deg);
+
+.cob-web-top-right {
+  top: 0;
+  right: 0;
+}
+
+.cob-web-bottom-left {
+  transform: rotate(180deg);
   bottom: 0;
   left: 0;
 }
 
-.fa-old-republic{
-    position: absolute;
-  transition: width 100ms ease-in-out, height 100ms ease-in-out;
-  width: 47px;
-  height: 47px;
+.cob-web-bottom-right {
+  transform: rotate(90deg);
+  bottom: 0;
+  right: 0;
 }
 
-.fa-jedi-order{
-    align-self: flex-start;
-    width: 47px;
-    height: 47px;
-    color: white;
-    font-size: 4rem;
-transform: translateX(-15px);
-top: 0;
+.spider {
+  align-self: flex-start;
+  transition: transform 100ms ease-in-out;
+  transform: translateY(-10px);
+}
+
+.card-back:hover .spider{
+transform: translateY(0);
 }
