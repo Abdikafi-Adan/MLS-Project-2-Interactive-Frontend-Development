@@ -23,8 +23,8 @@ body {
 }
 
 .game-info {
-  color: #FFBB89;
-  font-size: 4em;
+  color: black;
+font-family: 'Chelsea Market', cursive;  font-size: 4em;
 }
 
 .game-container {
@@ -49,13 +49,13 @@ position: absolute;
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 100%;
+  height: 100%; 
+ backface-visibility: hidden; 
   border-radius: 12px;
   border-width: 1px;
   border-style: solid;
   overflow: hidden;
   transition: transform 500ms ease-in-out;
-  backface-visibility: hidden; 
 }
 
 
@@ -74,6 +74,16 @@ border-color:navy;
 .card-front{
   transform: rotateY(180deg);
 }
+
+.card-value {
+      transition: transform 100ms ease-in-out;
+
+    transform: scale(1);
+}
+
+.card-front:hover .card-value {
+    transform: scale(2);
+}
 .fa-galactic-senate{
     position: relative;
   font-size: 4rem;
@@ -86,7 +96,7 @@ border-color:navy;
     height: 47px;
     transition: width 100ms ease-in-out,hight 100ms ease-in-out;
 }
-.card-back:hover .cob-web{
+.card-front:hover .cob-web{
     width: 53px;
     height: 54px;
 
@@ -117,9 +127,9 @@ border-color:navy;
 .spider {
   align-self: flex-start;
   transition: transform 100ms ease-in-out;
-  transform: translateY(-10px);
+  transform: translateY(35px);
 }
 
 .card-back:hover .spider{
-transform: translateY(0);
+transform: translateY(10px);
 }
