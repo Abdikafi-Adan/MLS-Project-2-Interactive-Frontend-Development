@@ -1,3 +1,5 @@
+
+
 * {
   box-sizing: border-box;
 }
@@ -6,15 +8,16 @@ html {
 }
 body {
   margin: 0;
-  background: radial-gradient(#b0e0e6, #4682b4);
+background:radial-gradient( #141E30,#243B55); */
 }
 
 .paga-title {
-  font-family: "Creepster", cursive;
-  color: #000080;
+  font-family: 'Pirata One', cursive;
+  color: #fff;
   font-weight: normal;
   text-align: center;
-  font-size: 6rem;
+  font-size: 5rem;
+  margin: auto;
 }
 .game-info-container {
   grid-column: 1 / -1;
@@ -23,14 +26,25 @@ body {
 }
 
 .game-info {
-  color: black;
-font-family: 'Chelsea Market', cursive;  font-size: 4em;
+  color: #fff;
+font-family: 'Chelsea Market', cursive;  font-size: 3em;
 }
 
+footer{
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: gold;
+   color: #000;
+   text-align: center;
+}
+
+
 .game-container {
-  margin: 50px auto;
+
+  margin: 10px auto;
   display: grid;
-  grid-template-columns: repeat(4, auto);
+  grid-template-columns: repeat(5, auto);
   grid-gap: 10px;
   justify-content: center;
   perspective: 500px;
@@ -72,6 +86,7 @@ border-color:navy;
 }
 
 .card-front{
+    background-color: #000;
   transform: rotateY(180deg);
 }
 
@@ -82,47 +97,11 @@ border-color:navy;
 }
 
 .card-front:hover .card-value {
-    transform: scale(2);
-}
-.fa-galactic-senate{
-    position: relative;
-  font-size: 4rem;
-  align-items: center;
-  
-}
-.cob-web{
-    position: absolute;
-    width: 47px;
-    height: 47px;
-    transition: width 100ms ease-in-out,hight 100ms ease-in-out;
-}
-.card-front:hover .cob-web{
-    width: 53px;
-    height: 54px;
-
-}
-.cob-web-top-left {
-  transform: rotate(270deg);
-  top: 0;
-  left: 0;
+    transform: scale(1.12);
 }
 
-.cob-web-top-right {
-  top: 0;
-  right: 0;
-}
 
-.cob-web-bottom-left {
-  transform: rotate(180deg);
-  bottom: 0;
-  left: 0;
-}
 
-.cob-web-bottom-right {
-  transform: rotate(90deg);
-  bottom: 0;
-  right: 0;
-}
 
 .spider {
   align-self: flex-start;
