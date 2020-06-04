@@ -8,7 +8,8 @@ html {
 }
 body {
   margin: 0;
-background:radial-gradient( #141E30,#243B55); */
+background:radial-gradient( #141E30,#243B55);
+text-align: center;
 }
 
 .paga-title {
@@ -25,6 +26,19 @@ background:radial-gradient( #141E30,#243B55); */
   justify-content: space-between;
 }
 
+.contact-heading {
+    color: #fff;
+    font-family: "Exo", sans-serif;
+    font-weight: 400;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+.text-center{
+    text-align: center;
+    color: #fff;
+}
+
 .game-info {
   color: #fff;
 font-family: 'Chelsea Market', cursive;  font-size: 3em;
@@ -37,8 +51,55 @@ footer{
    width: 100%;
    color: #000;
    text-align: center;
+   
+    position: fixed;
+    
+    margin-bottom: 0px
+}
+.center-form {
+    padding-top: 10px;
+    margin: 20px auto;
+    max-width: 70%;
+}
+.form-control{
+  
+    margin: 20px;
 }
 
+button[type="submit"] {
+    margin-top: 15px;
+    margin-bottom: 20px;
+    background-color: #e84610;
+    color: #fafafa;
+}
+
+.navalert-container{
+position: relative;
+top: 0;
+left: 0;
+display: flex;
+padding-left: 0;
+padding-right: 0;
+z-index: 1;
+}
+.nav-text{
+    color: white;
+}
+
+.navbar{
+margin-bottom: 0;
+border: 0;
+width: 100%;
+background-color: rgba(0, 0, 0, 0.25);
+
+}
+
+.navbar-brand a {
+    font-weight: bold;
+}
+.navbar .navbar-nav{
+    font-weight: bold;
+}
 
 .game-container {
 
@@ -158,4 +219,23 @@ transform: translateY(10px);
     flex-direction: column;
     align-items: center;
   }
+ .center-form {
+        padding-top: 30px;
+        min-height: 240px;
+        margin: 10px auto;
+        max-width: 50%;
+    }
+
+@keyframes overlay-grow {
+  from {
+    background-color: rgba(0, 0, 0, 0);
+    font-size: 0;
+  }
+  to {
+    background-color: rgba(0, 0, 0, .8);
+    font-size: 4em;
+  }
+}
+
+
 }
