@@ -16,7 +16,7 @@ User Questions that the one piece game would answers:
 * simple one piece game
 * Is there a fan-made game one piece?
 
-### git Features
+###  Features
 
 ### home page
  #### Navbar, 
