@@ -7,7 +7,8 @@ When making the game I want it to be simple and easy to understand. In the javas
 Home –  The home page, we have the game cards.
 in grid columns that´s 5/4, 20 cards in total.
 the cards are 10 crew members and there 10 pirate flags.
-###   contact – In the contact, we have a  contact form where you can get in touch with me so we can work together but also recommend anime to watch.
+###   contact – 
+In the contact, we have a  contact form where you can get in touch with me so we can work together but also recommend anime to watch.
 ##### User Story 
 User Questions that the one piece game would answers:
  * Looking for one piece game?
@@ -18,7 +19,8 @@ User Questions that the one piece game would answers:
 ### git Features
 
 ### home page
- #### Navbar, in navbar we have the game name and link to the different pages. 
+ #### Navbar, 
+ in navbar we have the game name and link to the different pages. 
 #### The game, with the help of javascript the user/player, can mismatch until the player matches the cards when a sound will play as to the player they matched right cards together. when the game starts in the background plays one piece music there is also a sound when the user flips a card it even has a game over sound and a victory sound to inform the player when it is game over and game victory where all the cards are matched right. The game also has a timer that counts down every second until the timer hits zero and that´s game over, the game also has a flip count that count up forever card click until victory as to try to get a victory with lest flips when the last game. the game also has a little animation the scales up when hover above using CSS.
 
  ### contact, we have a format that allows the user to get in contact with the developer using https://www.emailjs.com/ to sent email directly to my email address.
